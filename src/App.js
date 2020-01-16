@@ -5,17 +5,15 @@ import firebase from 'firebase/app';
 import 'firebase/database';
 
 const firebaseConfig = {
-  apiKey: "...",
-  authDomain: "...",
-  databaseURL: "...",
-  projectId: "...",
-  storageBucket: "....",
-  messagingSenderId: "...",
-  appId: "..."
+  apiKey: "AIzaSyDk3LhCQAHJi8cLgq8_xLO8aQYdj2NOBe4",
+  authDomain: "scheduler-fffaf.firebaseapp.com",
+  databaseURL: "https://scheduler-fffaf.firebaseio.com",
+  projectId: "scheduler-fffaf",
+  storageBucket: "scheduler-fffaf.appspot.com",
+  messagingSenderId: "649418507000",
+  appId: "1:649418507000:web:62661c7d4c1c9c0967710d",
+  measurementId: "G-ECF0WKSK86"
 };
-
-firebase.initializeApp(firebaseConfig);
-const db = firebase.database().ref();
 
 const terms = { F: 'Fall', W: 'Winter', S: 'Spring'};
 
@@ -166,3 +164,5 @@ const App = () => {
 };
 
 export default App;
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database().ref();
